@@ -15,7 +15,7 @@
 			"prefix": "app",
 			"architect": {
 				"build": {
-					"builder": "ngx-build-plus:browser",
+					"builder": "@angular-devkit/build-angular:browser",
 					"options": {
 						"tsConfig": "tsconfig.app.json",
 						"inlineStyleLanguage": "scss",
@@ -29,10 +29,6 @@
 						"styles": [
 							"src/styles.scss"
 						],
-						"outputMode": "server",
-						"ssr": {
-							"entry": "src/server.ts"
-						},
 						"main": "src/main.ts",
 						"outputPath": "dist/produtos",
 						"index": "src\\index.html",
